@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Portal - Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="coco">
+            <a href="index.html" class="btn btn-secondary">Back to Home</a>
+        </div>
+        <h1>Application Form</h1>
+        <form id="applicationForm" action="https://script.google.com/macros/s/AKfycbw-CpXAji8b9mDrc0w00mRc6nrAi2_lbl6uxYHwVMiwWMSKEHQadk5MqIQHacAaA-dUbg/exec" method="POST">
+            <!-- Company Name -->
+            <div class="form-group">
+                <label for="companyName">Company Name:</label>
+                <input type="text" id="companyName" name="companyName" required>
+            </div>
+
+            <!-- Coffee Export License Number -->
+            <div class="form-group">
+                <label for="licenseNumber">Coffee Export License Number:</label>
+                <input type="text" id="licenseNumber" name="licenseNumber" required>
+            </div>
+
+            <!-- Issued Date -->
+            <div class="form-group">
+                <label for="issuedDate">Issued Date:</label>
+                <input type="date" id="issuedDate" name="issuedDate" required>
+            </div>
+
+            <!-- Expiration Date -->
+            <div class="form-group">
+                <label for="expirationDate">Expiration Date:</label>
+                <input type="date" id="expirationDate" name="expirationDate" required>
+            </div>
+
+            <!-- Export Volumes for the Last 2 Years -->
+            <div class="form-group">
+                <label for="exportVolume">2 Years Export Volume:</label>
+                <input type="number" id="exportVolume" name="exportVolume" required>
+            </div>
+
+            <!-- Participant Name -->
+            <div class="form-group">
+                <label for="participantName">Participant Name:</label>
+                <input type="text" id="participantName" name="participantName" required>
+            </div>
+
+            <!-- Participant Phone Number -->
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+
+            <button type="submit" class="btn">SUBMIT</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
